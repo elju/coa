@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>article</title>
+        <link rel="stylesheet/less" type="text/css" href="css/coa.less" />
+
+        <script type="text/javascript">
+            less = {
+                env: "development", // or "production"
+                async: false,       // load imports async
+                fileAsync: false,   // load imports async when in a page under
+                                    // a file protocol
+                poll: 1000,         // when in watch mode, time in ms between polls
+                functions: {},      // user functions, keyed by name
+                dumpLineNumbers: "all", // or "mediaQuery" or "all"
+            };
+        </script>
+        <script src="js/less.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id=header>
+            Coalesce
+        </div>
+
+        <div id=navigation>
+            <div id=navigation_hotzone>
+                <div id=navigation_catagory>
+                    <ul>
+                        <li class="science_catagory"></li>
+                        <li class="arts_catagory"></li>
+                        <li class="philosophy_catagory"></li>
+                        <li class="politics_catagory"></li>
+                        <li class="projects_catagory"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id=content>
+            content
+        </div>
+    </body>
+</html>

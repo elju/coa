@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+
+#navigation {
+    #navigation_hotzone {
+        width: 125px;
+        border-radius: 0 50% 50% 0;
+
+        &:hover li {
+            padding-left: 1em;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding:0;
+        margin:0;
+        width: 0px
+    }
+    
+    li { 
+        text-indent: -.9em;
+        &:before {
+            font-family: monospace;
+            padding: 1px 5px;
+            margin-right: 5px;
+        }
+        &:after {
+            visibility: hidden;
+        }
+    }
+    
+    
+    ul:hover > li:after {
+        visibility: visible;
+    }
+
+    @import "catagories.less";
+    
+}
