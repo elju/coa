@@ -14,15 +14,23 @@ body {
 }
 
 #header {
-    padding: 10px 5px 0 5px;
+    margin: 10px 5px 0 10px;
+    height: 65px;
     .title {
+        line-height: 1;
         vertical-align:text-top;
         font-size: 42px;
+        border-bottom: 1px dotted #ba0000;
         &:first-letter {
             float: left;
-            padding-top: 5px;
-            font-size: 64px;
+            font-size: 72px;
+            margin-top: -10px;
+            text-decoration: none;
         }
+    }
+
+    #search {
+        float: right;
     }
 }
 
