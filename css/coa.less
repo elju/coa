@@ -7,6 +7,17 @@ body {
     height: 100%;
 }
 
+.annotations p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &:hover {
+        overflow: visible;
+        white-space: normal;
+        text-overflow: clip;
+    }
+}
+
 #header {
     margin: 10px 5px 0 10px;
     height: 65px;
