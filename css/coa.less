@@ -1,5 +1,10 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
+    height: 100%;
 }
 
 #header {
@@ -31,8 +36,12 @@ body {
     position: absolute;
     #navigation_hotzone {
         width: 150px;
-        border-radius: 0 50% 50% 0;
+        height: 50%;
+        padding-top: 75px;
 
+        background-color: black;
+
+        border-radius: 0 50% 50% 0;
         &:hover li {
             padding-left: 1em;
         }
@@ -48,6 +57,7 @@ body {
     li { 
         transition: all 0.25s;
         text-indent: -.9em;
+        margin: 10px 0;
         &:before {
             font-family: monospace;
             padding: 1px 5px;
