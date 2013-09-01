@@ -26,28 +26,70 @@ body {
 }
 
 #header {
-    margin: 10px 5px 0 10px;
-    height: 65px;
+    margin: 0;
+    margin-bottom: 20px;
+    position: relative;
+    .title-underline {
+      font-size: 2rem;
+      line-height: 1;
+      margin-top: 64px;
+      position: absolute;
+      font-family: Helvetica;
+    }
     .title {
-        border-bottom: 1px dotted #ba0000;
-        font-size: 42px;
-        line-height: 1;
+        // border-bottom: 1px dotted #999;
+        display: block;
+        font-size: 102px;
+        float: left;
+        line-height: 0.6;
+        padding: 0 20% 0 40px;
+        margin: 0;
+        margin-top: 30px;
+        letter-spacing: -4px;
+        font-family: Helvetica;
+        font-weight: 100;
         &:first-letter {
+            font-weight: 100;
             float: left;
-            font-size: 72px;
-            margin-top: -10px;
+            font-size: 132px;
+            margin-top: -13px;
             text-decoration: none;
         }
     }
 
-    #search {
-        float: right;
+    .search {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        height: 30px;
+        margin-top: -15px;
+        margin-right: 20px;
+    }
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
     }
 }
 
 #content {
-    width: 80%;
+    width: 75%;
 }
+
+.category-underline {
+  font-size: 1.2rem;
+  line-height: 1;
+  position: absolute;
+  margin-top: 41px;
+  font-family: Helvetica;
+}
+
+#category {
+  font-size: 4.5rem;
+  line-height: 1;
+  font-family: Helvetica;
+}
+
 
 #navigation {
     height: 50%;
@@ -55,7 +97,7 @@ body {
     #navigation_hotzone {
         border-radius: 0 50% 50% 0;
         height: 75%;
-        padding-top: 50%;
+        padding-top: 41%;
         width: 150px;
         &:hover li {
             padding-left: 1em;
@@ -70,8 +112,9 @@ body {
     }
     
     li { 
-        margin: 10px 0;
-        text-indent: -.9em;
+        font-size: 1.5rem;
+        margin: 15px 0;
+        text-indent: -0.8em;
         transition: all 0.25s;
         &:before {
             font-family: monospace;
