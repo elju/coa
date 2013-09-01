@@ -50,7 +50,7 @@ body {
       line-height: 1;
       margin-top: 64px;
       position: absolute;
-      font-family: Helvetica;
+      font-family: Helvetica, Arial;
     }
     .title {
         // border-bottom: 1px dotted #999;
@@ -138,7 +138,7 @@ body {
     }
     
     li { 
-      opacity: 0.4;
+        opacity: 0.4;
         font-size: 1.5rem;
         margin: 0;
         padding: 8px 0;
@@ -155,6 +155,7 @@ body {
         }
         &:hover {
           opacity: 1;
+          transition: opacity 0.10s, padding-left 0.25s;
         }
     }
     
