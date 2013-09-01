@@ -1,0 +1,17 @@
+.generateCatagory (@name; @color; @symbol) {
+    li.@{name}_catagory:after {
+        content: "@{name}";
+    }
+    li.@{name}_catagory:before {
+        content: @symbol;
+        color: @color;
+        background-color: fadeout(@color, 50%);
+    }
+
+}
+
+.generateCatagory(science, red, "@");
+.generateCatagory(arts, blue, "X");
+.generateCatagory(philosophy, purple, "+");
+.generateCatagory(politics, green, "=");
+.generateCatagory(projects, #295719, ":");

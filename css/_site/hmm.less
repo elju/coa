@@ -7,49 +7,6 @@ body {
     margin: 0;
 }
 
-.box {
-  width: 4.6em;
-  height: 4.6em;
-  float: left;
-  border: solid 3px gray;
-  margin: 10px;
-  opacity: 1;
-}
-
-.article-stub {
-  margin: 20px 0;
-  width: 900px;
-  vertical-align: middle;
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.7rem;
-  }
-}
-
-.article-stub:hover .box {
-  border: solid 3px red;
-}
-
-.article-stub:hover .article-title,
-.article-stub:hover .article-author {
-  opacity: 1;
-}
-
-.article-title {
-  display: inline-block;
-  opacity: 0.7;
-  margin: 0;
-}
-
-.article-author {
-  display: inline-block;
-  float: right;
-  opacity: 0.7;
-  margin: 0;
-}
-
 .icon {
   position: fixed;
   right: -6%;
@@ -79,7 +36,6 @@ body {
 
 #header {
     margin: 0;
-    background: black;
     margin-bottom: 20px;
     position: relative;
     .title-underline {
@@ -99,7 +55,6 @@ body {
     .title {
         // border-bottom: 1px dotted #999;
         display: block;
-        color: 5DBB15;
         font-size: 102px;
         float: left;
         line-height: 0.6;
@@ -154,7 +109,6 @@ body {
 
 #category {
   font-size: 4.5rem;
-  text-indent: 45;
   line-height: 1;
   font-family: Helvetica;
 }
@@ -210,6 +164,6 @@ body {
         opacity: 1;
     }
 
-    @import "wtf.less";
+    @import "cat.less";
     
 }
