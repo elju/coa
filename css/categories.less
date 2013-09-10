@@ -1,17 +1,25 @@
-.generateCategory (@name; @color; @symbol) {
+.generateCategory (@name; @color; @symbol; @short; @offset) {
     li.@{name}_category:after {
         content: "@{name}";
     }
     li.@{name}_category:before {
         content: @symbol;
-        color: @color;
+        color: darken(@color, 10%);
         background-color: fadeout(@color, 50%);
     }
 
+
+    @media screen and (max-width: 1150px) {
+      li.@{name}_category:after {
+          content: "@{short}.";
+      }
+    }
+
+
 }
 
-.generateCategory(science, red, "@");
-.generateCategory(arts, blue, "X");
-.generateCategory(philosophy, purple, "+");
-.generateCategory(politics, green, "=");
-.generateCategory(projects, #295719, ":");
+.generateCategory(science, @red, "@", sc, .1);
+.generateCategory(arts, @blue, "X", ar, .3);
+.generateCategory(philosophy, @purple, "+", ph, .5);
+.generateCategory(politics, @green, "=", po, .7);
+.generateCategory(projects, @orange, ":", pr, .9);
