@@ -14,18 +14,27 @@ body {
 }
 
 .article-author {
-    display: inline-block;
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
     opacity: 0.7;
     margin: 0;
 }
 
-.article-copy {
+.article-title {
+    text-transform: capitalize;
+    letter-spacing: -0.3;
+    opacity: 0.7;
+    margin: 0;
+
     &:first-letter {
         float: left;
-        font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-        font-size: 20pt;
-        text-indent: -5px;
+        font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+        font-size: 51pt;
+        text-indent: 0px;
+        margin: 10px 11px 0 0;
+        border: 2px solid rgb(148,148,148);
+        padding: 6px 10px 0 9px;
     }
 }
 
@@ -33,6 +42,7 @@ body {
     margin: 20px 0;
     width: 900px;
     vertical-align: middle;
+    position: relative;
     h1 {
         font-size: 2rem;
     }
@@ -44,12 +54,7 @@ body {
 .article-stub:hover .article-title,
 .article-stub:hover .article-author {
     opacity: 1;
-}
-
-.article-title {
-    display: inline-block;
-    opacity: 0.7;
-    margin: 0;
+    color: @red;
 }
 
 .icon {
@@ -121,12 +126,12 @@ body {
         }
 
         .search {
+                height: 30px;
+                margin-right: 20px;
+                margin-top: -15px;
                 position: absolute;
                 right: 0;
                 top: 50%;
-                height: 30px;
-                margin-top: -15px;
-                margin-right: 20px;
         }
         &:after {
                 clear: both;
@@ -140,25 +145,26 @@ body {
 }
 
 .category-underline {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: -moz-none;
     -ms-user-select: none;
-    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
     cursor: default;
+    font-family: Helvetica;
     font-size: 1.2rem;
     line-height: 1;
-    position: absolute;
     margin-top: 41px;
-    font-family: Helvetica;
+    position: absolute;
+    user-select: none;
 }
 
-#category {
-    font-size: 4.5rem;
-    text-indent: 45;
-    line-height: 1;
+.category {
     font-family: Helvetica;
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 3px;
+    text-indent: 45;
     text-indent: 45;
 }
 

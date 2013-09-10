@@ -4,8 +4,9 @@
     }
     li.@{name}_category:before {
         content: @symbol;
-        color: darken(@color, 10%);
-        background-color: fadeout(@color, 50%);
+        // color: darken(@color, 10%);
+        color: @color;
+        background-color: lighten(@color, 20%);
     }
 
 
@@ -22,4 +23,4 @@
 .generateCategory(arts, @blue, "X", ar, .3);
 .generateCategory(philosophy, @purple, "+", ph, .5);
 .generateCategory(politics, @green, "=", po, .7);
-.generateCategory(projects, @orange, ":", pr, .9);
+.generateCategory(projects, @yellow, ":", pr, .9);
