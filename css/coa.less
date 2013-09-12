@@ -124,17 +124,18 @@ summary.article-stub {
         line-height: 1.4;
         margin-bottom: 10px;
     }
+    .info {
+        opacity: 0.7;
+    }
     .article-author {
         position: absolute;
         right: 0;
         top: 0;
-        opacity: 0.7;
         margin: 0;
     }
     .article-title {
         text-transform: capitalize;
         letter-spacing: -0.3;
-        opacity: 0.7;
         margin: 0;
         &:first-letter {
             float: left;
@@ -147,10 +148,11 @@ summary.article-stub {
         }
     }
 
-    &:hover .article-title,
-    &:hover .article-author {
-        opacity: 1;
-        color: black;
+    &:hover { 
+        .info { opacity: 1; }
+        .article-title:first-letter {
+            border-color: lighten(red, 20%);
+        }
     }
 }
 
