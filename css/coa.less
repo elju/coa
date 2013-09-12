@@ -25,6 +25,9 @@
 /* -------->>> (2) Global <<<---------*/
 /* -----------------------------------*/
 
+a {
+    text-decoration: none;
+}
 
 html {
         height: 100%;
@@ -47,7 +50,7 @@ body {
 
 
 header {
-        margin: 10px 0 0;
+        margin: 30px 0 0;
         background: white;
         position: relative;
         height: 120px;
@@ -56,6 +59,7 @@ header {
             -moz-user-select: -moz-none;
             -ms-user-select: none;
             -webkit-touch-callout: none;
+            left: -60%;
             -webkit-user-select: none;
             font-family: Helvetica, Arial;
             font-size: 2rem;
@@ -74,6 +78,7 @@ header {
                 font-weight: 100;
                 letter-spacing: -0.019em;
                 line-height: 1.2;
+                left: 5%;
                 margin-top: 30px;
                 margin: 0;
                 padding: 0 20% 0 40px;
@@ -82,10 +87,10 @@ header {
                         float: left;
                         font-size: 132px;
                         font-weight: 100;
-                        // line-height: 1.1;
+                        line-height: 0.85;
                         // can't use lineheight on firefox
                         margin-top: 0px;
-                        line-height: 0.91;
+                        // line-height: 0.91;
                         text-decoration: none;
                 }
         }
@@ -140,14 +145,16 @@ summary.article-stub {
         text-transform: capitalize;
         letter-spacing: -0.3;
         margin: 0;
+        text-indent: -5px;
         &:first-letter {
             float: left;
             font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-            font-size: 71pt;
+            font-size: 100pt;
             // font-weight: 800;
             // line-height: 0.9;
-            margin: -5px 0.05em 0 0;
+            margin: -5px 0.1em 0 0;
             height: 0.685em;
+            text-indent: 0;
             line-height: 0.76;
             border: 0.05em solid rgb(148,148,148);
             padding: 0.14em 0.18em 0.14em 0.18em;
