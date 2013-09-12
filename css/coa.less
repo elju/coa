@@ -14,6 +14,7 @@
 /* ------->>> (1) Imports <<<---------*/
 /* -----------------------------------*/
 
+
         @import "variables.less";
         @import "categories.less";
         @import "print.less";
@@ -23,14 +24,17 @@
 /* -------->>> (2) Global <<<---------*/
 /* -----------------------------------*/
 
+
 html {
         height: 100%;
 }
 
 body {
         height: 100%;
+        line-height: 1.4;
         margin: 0;
 }
+
 
 /* -----------------------------------*/
 /* ------>>> (3) Typography <<<-------*/
@@ -42,42 +46,44 @@ body {
 
 
 header {
-        margin: 0;
+        margin: 10px 0 0;
         background: white;
-        margin-bottom: 20px;
         position: relative;
+        height: 120px;
         .title-underline {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
             -khtml-user-select: none;
             -moz-user-select: -moz-none;
             -ms-user-select: none;
-            user-select: none;
-            cursor: default;
-            font-size: 2rem;
-            line-height: 1;
-            margin-top: 64px;
-            position: absolute;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
             font-family: Helvetica, Arial;
+            font-size: 2rem;
+            line-height: 0;
+            position: absolute;
+            top: 2.17em;
+            user-select: none;
         }
         .title {
                 // border-bottom: 1px dotted #999;
-                display: block;
                 color: #BDBDBD;
-                font-size: 90px;
                 float: left;
-                line-height: 0.6;
-                padding: 0 20% 0 40px;
-                margin: 0;
-                margin-top: 30px;
-                letter-spacing: -4px;
                 font-family: Helvetica;
+                font-size: 90px;
                 font-weight: 100;
+                letter-spacing: -0.019em;
+                line-height: 1.2;
+                margin-top: 30px;
+                margin: 0;
+                padding: 0 20% 0 40px;
+                position: relative;
                 &:first-letter {
-                        font-weight: 100;
                         float: left;
                         font-size: 132px;
-                        margin-top: -13px;
+                        font-weight: 100;
+                        // line-height: 1.1;
+                        // can't use lineheight on firefox
+                        margin-top: 0px;
+                        line-height: 0.91;
                         text-decoration: none;
                 }
         }
@@ -100,41 +106,47 @@ header {
 /* ---->>> (4) Page Structure <<<-----*/
 /* -----------------------------------*/
 
-.article-author {
-    position: absolute;
-    right: 0;
-    top: 0;
-    opacity: 0.7;
-    margin: 0;
-}
-
-.article-title {
-    text-transform: capitalize;
-    letter-spacing: -0.3;
-    opacity: 0.7;
-    margin: 0;
-    &:first-letter {
-        float: left;
-        font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-        font-size: 51pt;
-        text-indent: 0px;
-        margin: 10px 11px 0 0;
-        border: 2px solid rgb(148,148,148);
-        padding: 6px 10px 0 9px;
-    }
-}
-
-.article-stub {
-    margin: 20px 0;
-    width: 900px;
-    vertical-align: middle;
+summary.article-stub {
+    margin: 40px 0;
     position: relative;
+    &:first-child {
+        margin-top: 0;
+    }
+
     h1 {
         font-size: 2rem;
     }
     h2 {
         font-size: 1.7rem;
     }
+    p {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+    .article-author {
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0.7;
+        margin: 0;
+    }
+    .article-title {
+        text-transform: capitalize;
+        letter-spacing: -0.3;
+        opacity: 0.7;
+        margin: 0;
+        &:first-letter {
+            float: left;
+            font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+            font-size: 51pt;
+            text-indent: 0px;
+            margin: 10px 11px 0 0;
+            border: 2px solid rgb(148,148,148);
+            padding: 6px 10px 0 9px;
+        }
+    }
+
     &:hover .article-title,
     &:hover .article-author {
         opacity: 1;
@@ -165,12 +177,16 @@ header {
         }
 }
 
-.article {
+.article-copy {
         text-align: justify;
 }
 
 #main {
-        width: 75%;
+    margin-top: 0;
+    // width: 75%;
+    .container {
+        margin-top: 55px;
+    }
 }
 
 .category-underline {
@@ -181,20 +197,21 @@ header {
     -webkit-user-select: none;
     cursor: default;
     font-family: Helvetica;
-    font-size: 1.2rem;
-    line-height: 1;
-    margin-top: 41px;
+    font-size: 0.45em;
+    line-height: 0;
     position: absolute;
+    top: 1.4em;
     user-select: none;
+    text-indent: 0;
 }
 
-.category {
+#category-heading {
     font-family: Helvetica;
     font-size: 4.5rem;
     line-height: 1;
     margin-bottom: 3px;
-    text-indent: 45;
-    text-indent: 45;
+    position: relative;
+    text-indent: 125pt;
 }
 
 /* -----------------------------------*/
@@ -203,15 +220,22 @@ header {
 
 nav {
         height: 50%;
+        top: 150px;
+        left: 0;
         position: fixed;
         // position: absolute;
+        #navigation_category {
+            position: absolute;
+            top: 50%;
+            margin-top: -6.2rem;
+        }
         #navigation_hotzone {
-                border-radius: 0 50% 50% 0;
-                height: 75%;
-                padding-top: 41%;
-                width: 150px;
+                border-radius: 0 100% 100% 0;
+                height: 100%;
+                padding-top: 0;
+                width: 200px;
                 &:hover li {
-                        margin-left: -0.1rem;
+                        margin-left: 0.9rem;
                         // padding-left: 0.9rem;
                 }
         }
@@ -223,34 +247,48 @@ nav {
                 width: 165px;
         }
         li { 
-                opacity: 0.4;
                 font-size: 1.5rem;
                 margin: 0;
-                padding: 8px 0;
                 text-indent: -0.8em;
-                transition: all 0.25s;
+                transition: opacity 0.25s, margin 0.50s;
+                line-height: 1;
+                opacity: 0.4;
                 &:before {
+                        transition: opacity 0.25s;
                         font-family: monospace;
                         margin-right: 5px;
                         padding: 1px 5px;
                 }
-                &:after {
-                        opacity: 0;
-                        transition: all 0.75s;
-                }
                 &:first-child {
-                    margin-top: 8px;
+                    padding-top: 0px;
                 }
                 &:hover {
                     opacity: 1;
-                    transition: opacity 0.10s, padding-left 0.25s;
+                    transition: opacity 0.05s, margin 0.2s;
+                    &:before {
+                        transition: 0.05s opacity;
+                    }
+                }
+                a[href] {
+                    transition: opacity 0.2s;
+                    text-decoration: none;
+                    opacity: 0;
+                    display: inline-block;
+                    height: 100%;
+                    padding: 8px 0;
+                    text-indent: 0;
+                    &:hover {
+                        opacity: 1;
+                        transition: opacity 0.05s;
+                    }
                 }
         }
-        
 
-        ul:hover > li:after,
         ul:hover > li:before {
-                opacity: 1;
+            opacity: 1;
+        }
+        ul:hover a {
+                opacity: 0.7;
         }
         
 }

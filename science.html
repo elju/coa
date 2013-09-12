@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>article</title>
+        <link rel="stylesheet" href="assets/css/html5boilerplate/normalize.css" />
         <link rel="stylesheet" href="assets/css/skeleton/base.css" />
         <link rel="stylesheet" href="assets/css/skeleton/skeleton.css" />
         <link rel="stylesheet" href="assets/css/skeleton/layout.css" />
@@ -22,32 +23,16 @@
     </head>
     <body>
         <header>
-            <div class="title-underline">__________________________________________________________</div>
-            <h1 class="title">Coalesce</h1>
+            <h1 class="title">Coalesce<div class="title-underline">__________________________________________________________</div></h1>
             <form class="search">
                     <input type="text" class="navbar-query"
 placeholder="Search">
             </form>
         </header>
 
-        <nav>
-            <div id=navigation_hotzone>
-                <div id=navigation_category>
-                    <ul>
-                        <li class="science-category"><a href="#non">science</a></li>
-                        <li class="arts-category"><a href="#non">arts</a></li>
-                        <li class="philosophy-category"><a href="#non">philosophy</a></li>
-                        <li class="politics-category"><a href="#non">politics</a></li>
-                        <li class="projects-category"><a href="#non">projects</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="category-underline">________________________________________</div>
-
-        <section id=main class=container>
-            <h2 id="category" class="category">Science</h2>
-            <div class="article">
+        <section id=main>
+            <h2 id="category-heading" class="category">Science <div class="category-underline">________________________________________</div></h2>
+            <div class=container>
                 <div class="thirteen columns">
                     <summary class="row clearfix article-stub">
                         <div class="info">
@@ -62,7 +47,7 @@ placeholder="Search">
                         introduction to operators on the american mathematical
                         physics background </p>
                     </summary>
-                    <div class="row clearfix article-stub">
+                    <summary class="row clearfix article-stub">
                         <div class="info">
                             <h1 class="article-title">classification</h1>
                             <h2 class="article-author">and quantum</h2>
@@ -76,8 +61,8 @@ placeholder="Search">
                         is a complex hilbert space of an immediate
                         generalization of basic functional on map one can be
                         the a if its use the expected value of these </p>
-                    </div>
-                    <div class="row clearfix article-stub">
+                    </summary>
+                    <summary class="row clearfix article-stub">
                         <div class="info">
                             <h1 class="article-title">to consider</h1>
                             <h2 class="article-author">only factor</h2>
@@ -91,10 +76,24 @@ placeholder="Search">
                         sic nctional on map one can be the a if its use the
                         expected value of these gebr of then this vector
                         uniquely determined by reduction</p>
-                    </div>
+                    </summary>
                 </div>
             </div>
         </section>
         <img src="images/science.svg" class="icon"></img>
+
+        <nav>
+            <div id=navigation_hotzone>
+                <div id=navigation_category>
+                    <ul>
+                        <li class="science_category"><a href="#non">science</a></li>
+                        <li class="arts_category"><a href="#non">arts</a></li>
+                        <li class="philosophy_category"><a href="#non">philosophy</a></li>
+                        <li class="politics_category"><a href="#non">politics</a></li>
+                        <li class="projects_category"><a href="#non">projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </body>
 </html>
