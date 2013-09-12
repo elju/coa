@@ -1,8 +1,27 @@
-//    Here we input the variables and mixins
-        @import "variables.less";
+/* -----------------------------------*/
+/* ----->>> TABLE OF CONTENTS <<<-----*/
+/* -----------------------------------*/
+/* 1) Imports ------------------------*/
+/* 2) Global -------------------------*/
+/* 3) Typography ---------------------*/
+/* 4) Header--------------------------*/
+/* 5) Page Structure -----------------*/
+/* 6) Navbar -------------------------*/
+/* -----------------------------------*/
 
+
+/* -----------------------------------*/
+/* ------->>> (1) Imports <<<---------*/
+/* -----------------------------------*/
+
+        @import "variables.less";
         @import "categories.less";
         @import "print.less";
+
+
+/* -----------------------------------*/
+/* -------->>> (2) Global <<<---------*/
+/* -----------------------------------*/
 
 html {
         height: 100%;
@@ -13,78 +32,16 @@ body {
         margin: 0;
 }
 
-.article-author {
-    position: absolute;
-    right: 0;
-    top: 0;
-    opacity: 0.7;
-    margin: 0;
-}
+/* -----------------------------------*/
+/* ------>>> (3) Typography <<<-------*/
+/* -----------------------------------*/
 
-.article-title {
-    text-transform: capitalize;
-    letter-spacing: -0.3;
-    opacity: 0.7;
-    margin: 0;
+/* -----------------------------------*/
+/* -------->>> (3) Header <<<---------*/
+/* -----------------------------------*/
 
-    &:first-letter {
-        float: left;
-        font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-        font-size: 51pt;
-        text-indent: 0px;
-        margin: 10px 11px 0 0;
-        border: 2px solid rgb(148,148,148);
-        padding: 6px 10px 0 9px;
-    }
-}
 
-.article-stub {
-    margin: 20px 0;
-    width: 900px;
-    vertical-align: middle;
-    position: relative;
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.7rem;
-    }
-}
-
-.article-stub:hover .article-title,
-.article-stub:hover .article-author {
-    opacity: 1;
-    color: @red;
-}
-
-.icon {
-    position: fixed;
-    right: -6%;
-    bottom: 15%;
-    width: 50%;
-    height: 50%;
-    opacity: 0.09;
-}
-
-.annotations p {
-        color: rgba(0,0,0,0.25);
-        overflow: hidden;
-        text-overflow: ellipsis;
-        transition: color 0.5s;
-        white-space: nowrap;
-        &:hover {
-                color: rgba(0,0,0,1);
-                overflow: visible;
-                text-overflow: clip;
-                white-space: normal;
-        }
-}
-
-.article {
-        text-align: justify;
-}
-
-#header {
+header {
         margin: 0;
         background: white;
         margin-bottom: 20px;
@@ -124,7 +81,6 @@ body {
                         text-decoration: none;
                 }
         }
-
         .search {
                 height: 30px;
                 margin-right: 20px;
@@ -140,7 +96,80 @@ body {
         }
 }
 
-#content {
+/* -----------------------------------*/
+/* ---->>> (4) Page Structure <<<-----*/
+/* -----------------------------------*/
+
+.article-author {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.article-title {
+    text-transform: capitalize;
+    letter-spacing: -0.3;
+    opacity: 0.7;
+    margin: 0;
+    &:first-letter {
+        float: left;
+        font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+        font-size: 51pt;
+        text-indent: 0px;
+        margin: 10px 11px 0 0;
+        border: 2px solid rgb(148,148,148);
+        padding: 6px 10px 0 9px;
+    }
+}
+
+.article-stub {
+    margin: 20px 0;
+    width: 900px;
+    vertical-align: middle;
+    position: relative;
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    &:hover .article-title,
+    &:hover .article-author {
+        opacity: 1;
+        color: black;
+    }
+}
+
+.icon {
+    position: fixed;
+    right: -6%;
+    bottom: 15%;
+    width: 50%;
+    height: 50%;
+    opacity: 0.09;
+}
+
+.annotations p {
+        color: rgba(0,0,0,0.25);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: color 0.5s;
+        white-space: nowrap;
+        &:hover {
+                color: rgba(0,0,0,1);
+                overflow: visible;
+                text-overflow: clip;
+                white-space: normal;
+        }
+}
+
+.article {
+        text-align: justify;
+}
+
+#main {
         width: 75%;
 }
 
@@ -168,17 +197,22 @@ body {
     text-indent: 45;
 }
 
+/* -----------------------------------*/
+/* -------->>> (5) Navbar <<<---------*/
+/* -----------------------------------*/
 
-#navigation {
+nav {
         height: 50%;
-        position: absolute;
+        position: fixed;
+        // position: absolute;
         #navigation_hotzone {
                 border-radius: 0 50% 50% 0;
                 height: 75%;
                 padding-top: 41%;
                 width: 150px;
                 &:hover li {
-                        padding-left: 1em;
+                        margin-left: -0.1rem;
+                        // padding-left: 0.9rem;
                 }
         }
 
@@ -187,11 +221,7 @@ body {
                 margin:0;
                 padding:0;
                 width: 165px;
-                &:first-child {
-                    margin: 8px 0 0 0;
-                }
         }
-        
         li { 
                 opacity: 0.4;
                 font-size: 1.5rem;
@@ -208,14 +238,18 @@ body {
                         opacity: 0;
                         transition: all 0.75s;
                 }
+                &:first-child {
+                    margin-top: 8px;
+                }
                 &:hover {
                     opacity: 1;
                     transition: opacity 0.10s, padding-left 0.25s;
                 }
         }
         
-        
-        ul:hover > li:after {
+
+        ul:hover > li:after,
+        ul:hover > li:before {
                 opacity: 1;
         }
         

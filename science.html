@@ -12,7 +12,7 @@
                 env: "development", // or "production"
                 async: false,       // load imports async
                 fileAsync: false,   // load imports async when in a page under
-                                    // a file protocol
+                                                        // a file protocol
                 poll: 1000,         // when in watch mode, time in ms between polls
                 functions: {},      // user functions, keyed by name
                 dumpLineNumbers: "all", // or "mediaQuery" or "all"
@@ -21,65 +21,80 @@
         <script src="js/less.js" type="text/javascript"></script>
     </head>
     <body>
-        <div id="header">
-          <div class="title-underline">__________________________________________________________</div>
-          <h1 class="title">Coalesce</h1>
-          <form class="search">
-              <input type="text" class="navbar-query" placeholder="Search">
-          </form>
-        </div>
+        <header>
+            <div class="title-underline">__________________________________________________________</div>
+            <h1 class="title">Coalesce</h1>
+            <form class="search">
+                    <input type="text" class="navbar-query"
+placeholder="Search">
+            </form>
+        </header>
 
-        <div id=navigation>
+        <nav>
             <div id=navigation_hotzone>
                 <div id=navigation_category>
                     <ul>
-                        <li class="science_category"></li>
-                        <li class="arts_category"></li>
-                        <li class="philosophy_category"></li>
-                        <li class="politics_category"></li>
-                        <li class="projects_category"></li>
+                        <li class="science-category"><a href="#non">science</a></li>
+                        <li class="arts-category"><a href="#non">arts</a></li>
+                        <li class="philosophy-category"><a href="#non">philosophy</a></li>
+                        <li class="politics-category"><a href="#non">politics</a></li>
+                        <li class="projects-category"><a href="#non">projects</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
         <div class="category-underline">________________________________________</div>
 
-        <div id=content class="container">
-          <h2 id="category" class="category">Science</h2>
-          <div class="article">
-            <div class="thirteen columns">
-              <div class="row clearfix article-stub">
-                <div class="info">
-                  <h1 class="article-title">Strings and Twisty Whirls</h1> <h2 class="article-author">Patrick Cooper</h2>
+        <section id=main class=container>
+            <h2 id="category" class="category">Science</h2>
+            <div class="article">
+                <div class="thirteen columns">
+                    <summary class="row clearfix article-stub">
+                        <div class="info">
+                            <h1 class="article-title">Strings and Twisty
+                            Whirls</h1>
+                            <h2 class="article-author">Patrick
+                            Cooper</h2>
+                        </div>
+                        <p class="article-copy"> a with a unique to the latter
+                        case and noncommutative geometry programs algebra of
+                        sequences of complex together with an excellent
+                        introduction to operators on the american mathematical
+                        physics background </p>
+                    </summary>
+                    <div class="row clearfix article-stub">
+                        <div class="info">
+                            <h1 class="article-title">classification</h1>
+                            <h2 class="article-author">and quantum</h2>
+                        </div>
+                        <p class="article-copy"> to consider only factor a
+                        sequential approximate identity in this
+                        characterization is a multiplicative unit the form
+                        elements and quantum field mathematically rigorous
+                        reference which is defined to be the american
+                        mathematical physics background and has non-type i if
+                        is a complex hilbert space of an immediate
+                        generalization of basic functional on map one can be
+                        the a if its use the expected value of these </p>
+                    </div>
+                    <div class="row clearfix article-stub">
+                        <div class="info">
+                            <h1 class="article-title">to consider</h1>
+                            <h2 class="article-author">only factor</h2>
+                        </div>
+                        <p class="article-copy">a sequential approximate
+                        identity in this characterization is a multiplicative
+                        it t form elements and quantum field mathematically
+                        rigorous reference ich  defined to be the american
+                        mathematical physics background and has n-ty i if is a
+                        complex hilbert space of an immediate generalization of
+                        sic nctional on map one can be the a if its use the
+                        expected value of these gebr of then this vector
+                        uniquely determined by reduction</p>
+                    </div>
                 </div>
-                <p class="article-copy"> a with a unique to the latter case and noncommutative geometry programs algebra of sequences of complex together with an excellent introduction to operators on the american mathematical physics background</p>
-              </div>
-              <div class="row clearfix article-stub">
-                <div class="info">
-                  <h1 class="article-title">classification</h1> <h2 class="article-author">and quantum</h2>
-                </div>
-                <p class="article-copy">
-                  to consider only factor a sequential approximate identity in this characterization is a multiplicative
-                  unit the form elements and quantum field mathematically rigorous reference
-                  which is defined to be the american mathematical physics background and has
-                  non-type i if is a complex hilbert space of an immediate generalization of
-                  basic functional on map one can be the a if its use the expected value of these
-                </p>
-              </div>
-              <div class="row clearfix article-stub">
-                <div class="info">
-                  <h1 class="article-title">to consider</h1> <h2 class="article-author">only factor</h2>
-                </div>
-                <p class="article-copy">a sequential approximate identity in this characterization is a multiplicative
-unit the form elements and quantum field mathematically rigorous reference
-which is defined to be the american mathematical physics background and has
-non-type i if is a complex hilbert space of an immediate generalization of
-basic functional on map one can be the a if its use the expected value of these
-algebras of then this vector uniquely determined by reduction</p>
-              </div>
             </div>
-        </div>
-      </div>
-      <img src="images/science.svg" class="icon"></img>
+        </section>
+        <img src="images/science.svg" class="icon"></img>
     </body>
 </html>

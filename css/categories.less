@@ -1,7 +1,4 @@
 .generateCategory (@name; @color; @symbol; @short; @offset) {
-    li.@{name}_category:after {
-        content: "@{name}";
-    }
     li.@{name}_category:before {
         content: @symbol;
         // color: darken(@color, 10%);
@@ -11,12 +8,14 @@
 
 
     @media screen and (max-width: 1150px) {
-      li.@{name}_category:after {
-          content: "@{short}.";
+      li {
+          overflow: hidden;
+          white-space: nowrap;
+          width: 40px;
+
+          text-overflow: ".";
       }
     }
-
-
 }
 
 .generateCategory(science, @red, "@", sc, .1);
