@@ -257,10 +257,9 @@ nav {
                 line-height: 1;
                 opacity: 0.4;
                 &:before {
-                        transition: opacity 0.25s;
-                        font-family: monospace;
-                        margin-right: 5px;
-                        padding: 1px 5px;
+                    font-family: monospace;
+                    margin-right: 5px;
+                    padding: 1px 5px;
                 }
                 &:first-child {
                     padding-top: 0px;
@@ -268,9 +267,6 @@ nav {
                 &:hover {
                     opacity: 1;
                     transition: opacity 0.05s, margin 0.2s;
-                    &:before {
-                        transition: 0.05s opacity;
-                    }
                 }
                 a[href] {
                     transition: opacity 0.2s;
@@ -287,11 +283,7 @@ nav {
                 }
         }
 
-        ul:hover > li:before {
-            opacity: 1;
-        }
         ul:hover a {
-                opacity: 0.7;
+                opacity: 1;
         }
-        
 }
