@@ -1,0 +1,51 @@
+@import "variables.less";
+
+.generateCategory (@name; @symbol; @short) {
+    @colour: "@{name}-colour";
+    @link: "@{name}-link";
+    li.@{name}_category:before {
+        content: @symbol;
+        // color: darken(@color, 10%);
+        color: @@colour;
+        background-color: lighten(@@colour, 20%);
+        padding: 0 0.33em;
+    }
+
+
+    @media screen and (max-width: 1150px) {
+      li {
+          overflow: hidden;
+          white-space: nowrap;
+          width: 40px;
+
+          text-overflow: ".";
+      }
+    }
+
+    summary.article-stub {
+        &:hover {
+            .info { opacity: 1; }
+        }
+        &.@{name} .article-title:before {
+          content: "@{short}";
+          display: block;
+          float: left;
+          // border: 3px solid @@colour;
+          // background-color: lighten(@@colour, 30%);
+          color: @@colour;
+          text-shadow: 0px 0px 1px #555;
+          width: 50px;
+          text-align: center;
+          margin-right: 27px;
+          margin-left: -20px;
+          margin-top: -1px;
+
+        }
+    }
+}
+
+.generateCategory(science, "@", sc);
+.generateCategory(arts, "X", ar);
+.generateCategory(philosophy, "+", ph);
+.generateCategory(politics, "=", po);
+.generateCategory(projects, ":", pr);

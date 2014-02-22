@@ -1,0 +1,145 @@
+li.science_category:before {
+  content: "@";
+  color: #ff3333;
+  background-color: #ff9999;
+  padding: 0 0.33em;
+}
+@media screen and (max-width: 1150px) {
+  li {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+    text-overflow: ".";
+  }
+}
+summary.article-stub:hover .info {
+  opacity: 1;
+}
+summary.article-stub.science .article-title:before {
+  content: "sc";
+  display: block;
+  float: left;
+  color: #ff3333;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
+li.arts_category:before {
+  content: "X";
+  color: #3333ff;
+  background-color: #9999ff;
+  padding: 0 0.33em;
+}
+@media screen and (max-width: 1150px) {
+  li {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+    text-overflow: ".";
+  }
+}
+summary.article-stub:hover .info {
+  opacity: 1;
+}
+summary.article-stub.arts .article-title:before {
+  content: "ar";
+  display: block;
+  float: left;
+  color: #3333ff;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
+li.philosophy_category:before {
+  content: "+";
+  color: #b300b3;
+  background-color: #ff1aff;
+  padding: 0 0.33em;
+}
+@media screen and (max-width: 1150px) {
+  li {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+    text-overflow: ".";
+  }
+}
+summary.article-stub:hover .info {
+  opacity: 1;
+}
+summary.article-stub.philosophy .article-title:before {
+  content: "ph";
+  display: block;
+  float: left;
+  color: #b300b3;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
+li.politics_category:before {
+  content: "=";
+  color: #00b300;
+  background-color: #1aff1a;
+  padding: 0 0.33em;
+}
+@media screen and (max-width: 1150px) {
+  li {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+    text-overflow: ".";
+  }
+}
+summary.article-stub:hover .info {
+  opacity: 1;
+}
+summary.article-stub.politics .article-title:before {
+  content: "po";
+  display: block;
+  float: left;
+  color: #00b300;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
+li.projects_category:before {
+  content: ":";
+  color: #fef435;
+  background-color: #fff99a;
+  padding: 0 0.33em;
+}
+@media screen and (max-width: 1150px) {
+  li {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+    text-overflow: ".";
+  }
+}
+summary.article-stub:hover .info {
+  opacity: 1;
+}
+summary.article-stub.projects .article-title:before {
+  content: "pr";
+  display: block;
+  float: left;
+  color: #fef435;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}

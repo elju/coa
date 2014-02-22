@@ -1,0 +1,417 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Subrayada:400);
+/* -----------------------------------*/
+/* ----->>> TABLE OF CONTENTS <<<-----*/
+/* -----------------------------------*/
+/* 1) Imports ------------------------*/
+/* 2) Global -------------------------*/
+/* 3) Typography ---------------------*/
+/* 4) Header--------------------------*/
+/* 5) Page Structure -----------------*/
+/* 6) Navbar -------------------------*/
+/* -----------------------------------*/
+/* -----------------------------------*/
+/* ------->>> (1) Imports <<<---------*/
+/* -----------------------------------*/
+li.science_category:before {
+  content: "@";
+  color: #ff3333;
+  background-color: #ff9999;
+  padding: 0 0.33em;
+}
+@media screen and (max-width: 1150px) {
+  li {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+    text-overflow: ".";
+  }
+}
+summary.article-stub:hover .info {
+  opacity: 1;
+}
+summary.article-stub.science .article-title:before {
+  content: "sc";
+  display: block;
+  float: left;
+  color: #ff3333;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
+li.arts_category:before {
+  content: "X";
+  color: #3333ff;
+  background-color: #9999ff;
+  padding: 0 0.33em;
+}
+@media screen and (max-width: 1150px) {
+  li {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+    text-overflow: ".";
+  }
+}
+summary.article-stub:hover .info {
+  opacity: 1;
+}
+summary.article-stub.arts .article-title:before {
+  content: "ar";
+  display: block;
+  float: left;
+  color: #3333ff;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
+li.philosophy_category:before {
+  content: "+";
+  color: #b300b3;
+  background-color: #ff1aff;
+  padding: 0 0.33em;
+}
+@media screen and (max-width: 1150px) {
+  li {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+    text-overflow: ".";
+  }
+}
+summary.article-stub:hover .info {
+  opacity: 1;
+}
+summary.article-stub.philosophy .article-title:before {
+  content: "ph";
+  display: block;
+  float: left;
+  color: #b300b3;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
+li.politics_category:before {
+  content: "=";
+  color: #00b300;
+  background-color: #1aff1a;
+  padding: 0 0.33em;
+}
+@media screen and (max-width: 1150px) {
+  li {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+    text-overflow: ".";
+  }
+}
+summary.article-stub:hover .info {
+  opacity: 1;
+}
+summary.article-stub.politics .article-title:before {
+  content: "po";
+  display: block;
+  float: left;
+  color: #00b300;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
+li.projects_category:before {
+  content: ":";
+  color: #fef435;
+  background-color: #fff99a;
+  padding: 0 0.33em;
+}
+@media screen and (max-width: 1150px) {
+  li {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+    text-overflow: ".";
+  }
+}
+summary.article-stub:hover .info {
+  opacity: 1;
+}
+summary.article-stub.projects .article-title:before {
+  content: "pr";
+  display: block;
+  float: left;
+  color: #fef435;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
+@media print {
+  #navigation {
+    visibility: hidden;
+  }
+}
+#spacer {
+  height: 106px;
+  background: white;
+  position: relative;
+  margin-top: -34px;
+}
+.title {
+  display: block;
+  z-index: 20;
+}
+.title .title-underline {
+  text-indent: -40px;
+}
+body nav {
+  top: 180px;
+}
+/* -----------------------------------*/
+/* -------->>> (2) Global <<<---------*/
+/* -----------------------------------*/
+a {
+  text-decoration: none;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  line-height: 1.4;
+  margin: 0;
+}
+/* -----------------------------------*/
+/* ------>>> (3) Typography <<<-------*/
+/* -----------------------------------*/
+/* -----------------------------------*/
+/* -------->>> (3) Header <<<---------*/
+/* -----------------------------------*/
+header {
+  margin: 10px 0 0;
+  background: white;
+  position: relative;
+  height: 120px;
+}
+header .title-underline {
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  left: -60%;
+  -webkit-user-select: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 0;
+  position: absolute;
+  top: 2.17em;
+  user-select: none;
+}
+header .title {
+  color: black;
+  font-family: 'Montserrat Subrayada', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 90px;
+  font-weight: 100;
+  letter-spacing: -0.019em;
+  line-height: 1.2;
+  left: 5%;
+  margin-top: 30px;
+  margin: 0;
+  padding: 0 20% 0 40px;
+  position: relative;
+}
+header .title:first-letter {
+  font-size: 110px;
+  margin-top: 0px;
+  text-decoration: none;
+}
+header .search {
+  height: 30px;
+  margin-right: 20px;
+  margin-top: -15px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+header:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* -----------------------------------*/
+/* ---->>> (4) Page Structure <<<-----*/
+/* -----------------------------------*/
+summary.article-stub {
+  margin: 30px 0;
+  position: relative;
+}
+summary.article-stub:first-child {
+  margin-top: 0;
+}
+summary.article-stub h1 {
+  font-size: 2rem;
+}
+summary.article-stub h2 {
+  font-size: 1.7rem;
+}
+summary.article-stub p {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+summary.article-stub .info {
+  display: block;
+  opacity: 0.7;
+}
+summary.article-stub .article-author {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+summary.article-stub .article-title {
+  letter-spacing: -0.3;
+  margin: 0;
+  text-indent: -5px;
+}
+summary.article-stub:hover .info {
+  opacity: 1;
+}
+.icon {
+  position: fixed;
+  right: 2%;
+  bottom: 15%;
+  height: 50%;
+  opacity: 0.09;
+}
+.annotations p {
+  color: rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.5s;
+  white-space: nowrap;
+}
+.annotations p:hover {
+  color: #000000;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+}
+.article {
+  text-align: justify;
+  margin-top: 100px;
+  font-size: 14pt;
+  line-height: 1.2;
+}
+.article p:first-line {
+  margin-left: 4pt;
+}
+.article-copy {
+  text-align: justify;
+}
+#main {
+  margin-top: 0;
+}
+#main .container {
+  margin-top: 45px;
+}
+.category-underline {
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  cursor: default;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.45em;
+  line-height: 0;
+  position: absolute;
+  top: 1.4em;
+  user-select: none;
+  text-indent: 0;
+}
+#category-heading {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-bottom: 3px;
+  position: relative;
+  text-indent: 165pt;
+  top: -15px;
+}
+/* -----------------------------------*/
+/* -------->>> (5) Navbar <<<---------*/
+/* -----------------------------------*/
+nav {
+  height: 50%;
+  top: 127px;
+  left: 0;
+  position: fixed;
+}
+nav #navigation_category {
+  position: absolute;
+  top: 50%;
+  margin-top: -6.2rem;
+}
+nav #navigation_hotzone {
+  border-radius: 0 100% 100% 0;
+  height: 100%;
+  padding-top: 0;
+  width: 260px;
+}
+nav #navigation_hotzone:hover li {
+  margin-left: 1.9rem;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 240px;
+}
+nav li {
+  font-size: 2rem;
+  margin: 0;
+  text-indent: -0.95em;
+  transition: all 0.1s;
+  line-height: 1;
+  opacity: 0.4;
+  display: inline-block;
+}
+nav li a {
+  transition: all 0.05s;
+  text-decoration: none;
+  opacity: 0;
+  display: inline-block;
+  height: 100%;
+  padding: 8px 0;
+  text-indent: 0;
+}
+nav li a:hover[href] {
+  color: #333333;
+}
+nav li:hover {
+  opacity: 1;
+  transition: margin 0.1s;
+}
+nav li:first-child {
+  padding-top: 0px;
+}
+nav li:before {
+  font-family: monospace;
+  margin-right: 5px;
+  padding: 1px 5px;
+}
+nav ul:hover a {
+  opacity: 1;
+}
