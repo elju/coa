@@ -1,6 +1,7 @@
 /* -----------------------------------*/
 /* ----->>> TABLE OF CONTENTS <<<-----*/
 /* -----------------------------------*/
+/* 0) Selectors ----------------------*/
 /* 1) Imports ------------------------*/
 /* 2) Global -------------------------*/
 /* 3) Typography ---------------------*/
@@ -9,6 +10,14 @@
 /* 6) Navbar -------------------------*/
 /* -----------------------------------*/
 
+/* -----------------------------------*/
+/* ------->>> (0) Selectors <<<-------*/
+/* -----------------------------------*/
+
+
+@desktop:   ~"only screen and (min-width: 960px)";
+@tablet:    ~"only screen and (min-width: 720px) and (max-width: 959px)";
+@phone:    ~"only screen and (max-width: 720px)";
 
 /* -----------------------------------*/
 /* ------->>> (1) Imports <<<---------*/
@@ -189,14 +198,16 @@ summary.article-stub {
 }
 
 .article {
-  text-align: justify;
-  margin-top: 100px;
-  font-size: 14pt;
-  line-height: 1.2;
+    text-align: justify;
+    margin-top: 100px;
+    font-size: 14pt;
+    line-height: 1.2;
 
-  p:first-line {
-    margin-left: 4pt;
-  }
+    max-width: 720px;
+
+    p:first-line {
+        margin-left: 4pt;
+    }
 }
 
 .article-copy {
@@ -205,7 +216,6 @@ summary.article-stub {
 
 #main {
     margin-top: 0;
-    // width: 75%;
     .container {
         margin-top: 45px;
     }
@@ -233,8 +243,10 @@ summary.article-stub {
     line-height: 1;
     margin-bottom: 3px;
     position: relative;
-    text-indent: 165pt;
     top: -15px;
+    @media @desktop {
+        text-indent: 165pt;
+    }
 }
 
 /* -----------------------------------*/
