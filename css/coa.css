@@ -2,6 +2,7 @@
 /* -----------------------------------*/
 /* ----->>> TABLE OF CONTENTS <<<-----*/
 /* -----------------------------------*/
+/* 0) Selectors ----------------------*/
 /* 1) Imports ------------------------*/
 /* 2) Global -------------------------*/
 /* 3) Typography ---------------------*/
@@ -10,12 +11,15 @@
 /* 6) Navbar -------------------------*/
 /* -----------------------------------*/
 /* -----------------------------------*/
+/* ------->>> (0) Selectors <<<-------*/
+/* -----------------------------------*/
+/* -----------------------------------*/
 /* ------->>> (1) Imports <<<---------*/
 /* -----------------------------------*/
 li.science_category:before {
   content: "@";
-  color: #ff3333;
-  background-color: #ff9999;
+  color: #d24532;
+  background-color: #e49186;
   padding: 0 0.33em;
 }
 @media screen and (max-width: 1150px) {
@@ -28,23 +32,11 @@ li.science_category:before {
 }
 summary.article-stub:hover .info {
   opacity: 1;
-}
-summary.article-stub.science .article-title:before {
-  content: "sc";
-  display: block;
-  float: left;
-  color: #ff3333;
-  text-shadow: 0px 0px 1px #555;
-  width: 50px;
-  text-align: center;
-  margin-right: 27px;
-  margin-left: -20px;
-  margin-top: -1px;
 }
 li.arts_category:before {
   content: "X";
-  color: #3333ff;
-  background-color: #9999ff;
+  color: #003a47;
+  background-color: #008dad;
   padding: 0 0.33em;
 }
 @media screen and (max-width: 1150px) {
@@ -57,23 +49,11 @@ li.arts_category:before {
 }
 summary.article-stub:hover .info {
   opacity: 1;
-}
-summary.article-stub.arts .article-title:before {
-  content: "ar";
-  display: block;
-  float: left;
-  color: #3333ff;
-  text-shadow: 0px 0px 1px #555;
-  width: 50px;
-  text-align: center;
-  margin-right: 27px;
-  margin-left: -20px;
-  margin-top: -1px;
 }
 li.philosophy_category:before {
   content: "+";
-  color: #b300b3;
-  background-color: #ff1aff;
+  color: #b36ba6;
+  background-color: #d6aecf;
   padding: 0 0.33em;
 }
 @media screen and (max-width: 1150px) {
@@ -86,23 +66,11 @@ li.philosophy_category:before {
 }
 summary.article-stub:hover .info {
   opacity: 1;
-}
-summary.article-stub.philosophy .article-title:before {
-  content: "ph";
-  display: block;
-  float: left;
-  color: #b300b3;
-  text-shadow: 0px 0px 1px #555;
-  width: 50px;
-  text-align: center;
-  margin-right: 27px;
-  margin-left: -20px;
-  margin-top: -1px;
 }
 li.politics_category:before {
   content: "=";
-  color: #00b300;
-  background-color: #1aff1a;
+  color: #24db52;
+  background-color: #7ce997;
   padding: 0 0.33em;
 }
 @media screen and (max-width: 1150px) {
@@ -115,23 +83,11 @@ li.politics_category:before {
 }
 summary.article-stub:hover .info {
   opacity: 1;
-}
-summary.article-stub.politics .article-title:before {
-  content: "po";
-  display: block;
-  float: left;
-  color: #00b300;
-  text-shadow: 0px 0px 1px #555;
-  width: 50px;
-  text-align: center;
-  margin-right: 27px;
-  margin-left: -20px;
-  margin-top: -1px;
 }
 li.projects_category:before {
   content: ":";
-  color: #fef435;
-  background-color: #fff99a;
+  color: #f8f825;
+  background-color: #fbfb88;
   padding: 0 0.33em;
 }
 @media screen and (max-width: 1150px) {
@@ -144,18 +100,6 @@ li.projects_category:before {
 }
 summary.article-stub:hover .info {
   opacity: 1;
-}
-summary.article-stub.projects .article-title:before {
-  content: "pr";
-  display: block;
-  float: left;
-  color: #fef435;
-  text-shadow: 0px 0px 1px #555;
-  width: 50px;
-  text-align: center;
-  margin-right: 27px;
-  margin-left: -20px;
-  margin-top: -1px;
 }
 @media print {
   #navigation {
@@ -195,6 +139,12 @@ body {
 /* -----------------------------------*/
 /* ------>>> (3) Typography <<<-------*/
 /* -----------------------------------*/
+.coalesce-row {
+  text-indent: 20pt;
+}
+.coalesce-row:first-letter {
+  text-transform: capitalize;
+}
 /* -----------------------------------*/
 /* -------->>> (3) Header <<<---------*/
 /* -----------------------------------*/
@@ -220,10 +170,10 @@ header .title-underline {
 }
 header .title {
   color: black;
-  font-family: 'Montserrat Subrayada', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 90px;
-  font-weight: 100;
-  letter-spacing: -0.019em;
+  font-weight: bold;
+  letter-spacing: -3.5px;
   line-height: 1.2;
   left: 5%;
   margin-top: 30px;
@@ -232,8 +182,7 @@ header .title {
   position: relative;
 }
 header .title:first-letter {
-  font-size: 110px;
-  margin-top: 0px;
+  font-size: 100px;
   text-decoration: none;
 }
 header .search {
@@ -274,6 +223,11 @@ summary.article-stub .info {
   display: block;
   opacity: 0.7;
 }
+summary.article-stub svg {
+  display: block;
+  float: left;
+  fill: #ff0000;
+}
 summary.article-stub .article-author {
   position: absolute;
   right: 0;
@@ -313,6 +267,7 @@ summary.article-stub:hover .info {
   margin-top: 100px;
   font-size: 14pt;
   line-height: 1.2;
+  max-width: 720px;
 }
 .article p:first-line {
   margin-left: 4pt;
@@ -347,8 +302,12 @@ summary.article-stub:hover .info {
   line-height: 1;
   margin-bottom: 3px;
   position: relative;
-  text-indent: 165pt;
   top: -15px;
+}
+@media only screen and (min-width: 960px) {
+  #category-heading {
+    text-indent: 165pt;
+  }
 }
 /* -----------------------------------*/
 /* -------->>> (5) Navbar <<<---------*/
@@ -379,7 +338,12 @@ nav ul {
   padding: 0;
   width: 240px;
 }
+nav a {
+  display: inline-block;
+  margin-top: 10px;
+}
 nav li {
+  color: transparent;
   font-size: 2rem;
   margin: 0;
   text-indent: -0.95em;
@@ -388,19 +352,8 @@ nav li {
   opacity: 0.4;
   display: inline-block;
 }
-nav li a {
-  transition: all 0.05s;
-  text-decoration: none;
-  opacity: 0;
-  display: inline-block;
-  height: 100%;
-  padding: 8px 0;
-  text-indent: 0;
-}
-nav li a:hover[href] {
-  color: #333333;
-}
 nav li:hover {
+  color: black;
   opacity: 1;
   transition: margin 0.1s;
 }

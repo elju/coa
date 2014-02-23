@@ -1,7 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Subrayada:400);
 li.science_category:before {
   content: "@";
-  color: #ff3333;
-  background-color: #ff9999;
+  color: #d24532;
+  background-color: #e49186;
   padding: 0 0.33em;
 }
 @media screen and (max-width: 1150px) {
@@ -16,12 +17,15 @@ summary.article-stub:hover .info {
   opacity: 1;
 }
 summary.article-stub.science .article-title:before {
-  content: "sc";
+  content: "";
   display: block;
   float: left;
-  color: #ff3333;
+  background: url('/images/science.svg');
+  background-size: 50px 50px;
+  color: #d24532;
   text-shadow: 0px 0px 1px #555;
   width: 50px;
+  height: 50px;
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
@@ -29,8 +33,8 @@ summary.article-stub.science .article-title:before {
 }
 li.arts_category:before {
   content: "X";
-  color: #3333ff;
-  background-color: #9999ff;
+  color: #003a47;
+  background-color: #008dad;
   padding: 0 0.33em;
 }
 @media screen and (max-width: 1150px) {
@@ -45,12 +49,15 @@ summary.article-stub:hover .info {
   opacity: 1;
 }
 summary.article-stub.arts .article-title:before {
-  content: "ar";
+  content: "";
   display: block;
   float: left;
-  color: #3333ff;
+  background: url('/images/arts.svg');
+  background-size: 50px 50px;
+  color: #003a47;
   text-shadow: 0px 0px 1px #555;
   width: 50px;
+  height: 50px;
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
@@ -58,8 +65,8 @@ summary.article-stub.arts .article-title:before {
 }
 li.philosophy_category:before {
   content: "+";
-  color: #b300b3;
-  background-color: #ff1aff;
+  color: #b36ba6;
+  background-color: #d6aecf;
   padding: 0 0.33em;
 }
 @media screen and (max-width: 1150px) {
@@ -74,12 +81,15 @@ summary.article-stub:hover .info {
   opacity: 1;
 }
 summary.article-stub.philosophy .article-title:before {
-  content: "ph";
+  content: "";
   display: block;
   float: left;
-  color: #b300b3;
+  background: url('/images/philosophy.svg');
+  background-size: 50px 50px;
+  color: #b36ba6;
   text-shadow: 0px 0px 1px #555;
   width: 50px;
+  height: 50px;
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
@@ -87,8 +97,8 @@ summary.article-stub.philosophy .article-title:before {
 }
 li.politics_category:before {
   content: "=";
-  color: #00b300;
-  background-color: #1aff1a;
+  color: #24db52;
+  background-color: #7ce997;
   padding: 0 0.33em;
 }
 @media screen and (max-width: 1150px) {
@@ -103,12 +113,15 @@ summary.article-stub:hover .info {
   opacity: 1;
 }
 summary.article-stub.politics .article-title:before {
-  content: "po";
+  content: "";
   display: block;
   float: left;
-  color: #00b300;
+  background: url('/images/politics.svg');
+  background-size: 50px 50px;
+  color: #24db52;
   text-shadow: 0px 0px 1px #555;
   width: 50px;
+  height: 50px;
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
@@ -116,8 +129,8 @@ summary.article-stub.politics .article-title:before {
 }
 li.projects_category:before {
   content: ":";
-  color: #fef435;
-  background-color: #fff99a;
+  color: #f8f825;
+  background-color: #fbfb88;
   padding: 0 0.33em;
 }
 @media screen and (max-width: 1150px) {
@@ -132,12 +145,15 @@ summary.article-stub:hover .info {
   opacity: 1;
 }
 summary.article-stub.projects .article-title:before {
-  content: "pr";
+  content: "";
   display: block;
   float: left;
-  color: #fef435;
+  background: url('/images/projects.svg');
+  background-size: 50px 50px;
+  color: #f8f825;
   text-shadow: 0px 0px 1px #555;
   width: 50px;
+  height: 50px;
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;

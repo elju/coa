@@ -33,21 +33,25 @@
         <section id=main>
             <div class=container>
                 <div class="thirteen columns">
+
                     <summary id=rowone class="row clearfix article-stub politics">
-                        <a class=info href="article.html">
-                            <h1 class="article-title">US Backing of Russia</h1>
-                            <h2 class="article-author">Jodi Rudoren</h2>
-                        </a>
-                        <p class="article-copy">But there was also pessimism in
-                            Israel that the Syrian president, Bashar al-Assad,
-                            would actually fulfill his promise to turn over and
-                            ultimately destroy his chemical stockpile. Instead,
-                            many analysts worried that Mr. Assad, his Iranian
-                            patrons and the Lebanese militia Hezbollah would
-                            emerge strengthened, and that the main upshot of
-                            the episode would be a sense of American wavering
-                            on involvement in the Middle East.</p>
+
+                        <script id="article-template" type="text/x-handlebars-template">
+                            <a class=info href="article.html">
+                                <h1 class="article-title">
+                                    {{title}}
+                                </h1>
+                                <h2 class="article-author">
+                                    {{author}}
+                                </h2>
+                            </a>
+                            <p class="article-copy">
+                                {{copy}}
+                            </p>
+                        </script>
+
                     </summary>
+
                     <summary id=rowtwo class="row clearfix article-stub arts">
                         <a class=info href="article.html">
                             <h1 class="article-title">classification</h1>
@@ -86,14 +90,17 @@
             <div id=navigation_hotzone>
                 <div id=navigation_category>
                     <ul>
-                        <li class="science_category"><a href="science.html">science</a></li><br>
-                        <li class="arts_category"><a href="arts.html">arts</a></li><br>
-                        <li class="philosophy_category"><a href="philosophy.html">philosophy</a></li><br>
-                        <li class="politics_category"><a href="politics.html">politics</a></li><br>
-                        <li class="projects_category"><a href="projects.html">projects</a></li><br>
+                        <a href="science.html"><li class="science_category">science</li></a><br>
+                        <a href="arts.html"><li class="arts_category">arts</li></a><br>
+                        <a href="philosophy.html"><li class="philosophy_category">philosophy</li></a><br>
+                        <a href="politics.html"><li class="politics_category">politics</li></a><br>
+                        <a href="projects.html"><li class="projects_category">projects</li></a><br>
                     </ul>
                 </div>
             </div>
         </nav>
+        <script src="js/backbone.js" type="text/javascript"></script>
+        <script src="js/handlebars-v1.3.0.js" type="text/javascript"></script>
+        <script src="js/coaless.js" type="text/javascript"></script>
     </body>
 </html>

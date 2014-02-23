@@ -24,10 +24,10 @@
 /* -----------------------------------*/
 
 
-        @import "variables.less";
-        @import "mixins.less";
-        @import "print.less";
-        @import "front.less";
+@import "variables.less";
+@import "mixins.less";
+@import "print.less";
+@import "front.less";
 
 
 /* -----------------------------------*/
@@ -52,6 +52,13 @@ body {
 /* -----------------------------------*/
 /* ------>>> (3) Typography <<<-------*/
 /* -----------------------------------*/
+
+.coalesce-row {
+  text-indent: 20pt;
+  &:first-letter {
+    text-transform: capitalize;
+  }
+}
 
 /* -----------------------------------*/
 /* -------->>> (3) Header <<<---------*/
@@ -81,10 +88,10 @@ header {
                 // border-bottom: 1px dotted #999;
                 // color: #BDBDBD;
                 color: black;
-                font-family: 'Montserrat Subrayada', "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-family: Helvetica, sans-serif;
                 font-size: 90px;
-                font-weight: 100;
-                letter-spacing: -0.019em;
+                font-weight: bold;
+                letter-spacing: -3.5px;
                 line-height: 1.2;
                 left: 5%;
                 margin-top: 30px;
@@ -92,12 +99,7 @@ header {
                 padding: 0 20% 0 40px;
                 position: relative;
                 &:first-letter {
-                        // float: left;
-                        font-size: 110px;
-                        // line-height: 0.85;
-                        // can't use lineheight on firefox
-                        margin-top: 0px;
-                        // line-height: 0.91;
+                        font-size: 100px;
                         text-decoration: none;
                 }
         }
@@ -141,6 +143,11 @@ summary.article-stub {
     .info {
         display: block;
         opacity: 0.7;
+    }
+    svg {
+      display: block;
+      float: left;
+      fill: #ff0000;
     }
     .article-author {
         position: absolute;
@@ -281,7 +288,12 @@ nav {
         padding:0;
         width: 240px;
     }
+    a {
+      display: inline-block;
+      margin-top: 10px;
+    }
     li { 
+        color: transparent;
         font-size: 2rem;
         margin: 0;
         text-indent: -.95em;
@@ -289,19 +301,8 @@ nav {
         line-height: 1;
         opacity: 0.4;
         display: inline-block;
-        a {
-            transition: all 0.05s;
-            text-decoration: none;
-            opacity: 0;
-            display: inline-block;
-            height: 100%;
-            padding: 8px 0;
-            text-indent: 0;
-            &:hover[href] {
-                color: rgb(51,51,51);
-            }
-        }
         &:hover {
+            color: black;
             opacity: 1;
             transition: margin 0.1s;
         }
