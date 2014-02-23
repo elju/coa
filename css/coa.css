@@ -33,6 +33,21 @@ li.science_category:before {
 summary.article-stub:hover .info {
   opacity: 1;
 }
+summary.article-stub.science .article-title:before {
+  content: "";
+  display: block;
+  float: left;
+  background: url('/images/science.svg');
+  background-size: 50px 50px;
+  color: #d24532;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
 li.arts_category:before {
   content: "X";
   color: #003a47;
@@ -49,6 +64,21 @@ li.arts_category:before {
 }
 summary.article-stub:hover .info {
   opacity: 1;
+}
+summary.article-stub.arts .article-title:before {
+  content: "";
+  display: block;
+  float: left;
+  background: url('/images/arts.svg');
+  background-size: 50px 50px;
+  color: #003a47;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
 }
 li.philosophy_category:before {
   content: "+";
@@ -67,6 +97,21 @@ li.philosophy_category:before {
 summary.article-stub:hover .info {
   opacity: 1;
 }
+summary.article-stub.philosophy .article-title:before {
+  content: "";
+  display: block;
+  float: left;
+  background: url('/images/philosophy.svg');
+  background-size: 50px 50px;
+  color: #b36ba6;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
 li.politics_category:before {
   content: "=";
   color: #24db52;
@@ -84,6 +129,21 @@ li.politics_category:before {
 summary.article-stub:hover .info {
   opacity: 1;
 }
+summary.article-stub.politics .article-title:before {
+  content: "";
+  display: block;
+  float: left;
+  background: url('/images/politics.svg');
+  background-size: 50px 50px;
+  color: #24db52;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
+}
 li.projects_category:before {
   content: ":";
   color: #f8f825;
@@ -100,6 +160,21 @@ li.projects_category:before {
 }
 summary.article-stub:hover .info {
   opacity: 1;
+}
+summary.article-stub.projects .article-title:before {
+  content: "";
+  display: block;
+  float: left;
+  background: url('/images/projects.svg');
+  background-size: 50px 50px;
+  color: #f8f825;
+  text-shadow: 0px 0px 1px #555;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: -20px;
+  margin-top: -1px;
 }
 @media print {
   #navigation {
@@ -170,6 +245,7 @@ header .title-underline {
 }
 header .title {
   color: black;
+  display: inline-block;
   font-family: Helvetica, sans-serif;
   font-size: 90px;
   font-weight: bold;
@@ -178,8 +254,9 @@ header .title {
   left: 5%;
   margin-top: 30px;
   margin: 0;
-  padding: 0 20% 0 40px;
+  padding-left: 40px;
   position: relative;
+  width: 70%;
 }
 header .title:first-letter {
   font-size: 100px;

@@ -30,6 +30,7 @@ summary.article-stub.science .article-title:before {
   margin-right: 27px;
   margin-left: -20px;
   margin-top: -1px;
+  margin-bottom: 10px;
 }
 li.arts_category:before {
   content: "X";
@@ -62,6 +63,7 @@ summary.article-stub.arts .article-title:before {
   margin-right: 27px;
   margin-left: -20px;
   margin-top: -1px;
+  margin-bottom: 10px;
 }
 li.philosophy_category:before {
   content: "+";
@@ -94,6 +96,7 @@ summary.article-stub.philosophy .article-title:before {
   margin-right: 27px;
   margin-left: -20px;
   margin-top: -1px;
+  margin-bottom: 10px;
 }
 li.politics_category:before {
   content: "=";
@@ -126,6 +129,7 @@ summary.article-stub.politics .article-title:before {
   margin-right: 27px;
   margin-left: -20px;
   margin-top: -1px;
+  margin-bottom: 10px;
 }
 li.projects_category:before {
   content: ":";
@@ -158,4 +162,5 @@ summary.article-stub.projects .article-title:before {
   margin-right: 27px;
   margin-left: -20px;
   margin-top: -1px;
+  margin-bottom: 10px;
 }
