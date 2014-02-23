@@ -86,7 +86,7 @@ summary.article-stub.philosophy .article-title:before {
   content: "";
   display: block;
   float: left;
-  background: url('/images/philosophy.svg');
+  background: url('/images/philosophy-color.svg');
   background-size: 50px 50px;
   color: #b36ba6;
   text-shadow: 0px 0px 1px #555;
