@@ -37,7 +37,7 @@ summary.article-stub.science .article-title:before {
   content: "";
   display: block;
   float: left;
-  background: url('/images/science.svg');
+  background: url('/images/science-color.svg');
   background-size: 50px 50px;
   color: #d24532;
   text-shadow: 0px 0px 1px #555;
@@ -46,7 +46,7 @@ summary.article-stub.science .article-title:before {
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
-  margin-top: -1px;
+  margin-bottom: 10px;
 }
 li.arts_category:before {
   content: "X";
@@ -69,7 +69,7 @@ summary.article-stub.arts .article-title:before {
   content: "";
   display: block;
   float: left;
-  background: url('/images/arts.svg');
+  background: url('/images/arts-color.svg');
   background-size: 50px 50px;
   color: #003a47;
   text-shadow: 0px 0px 1px #555;
@@ -78,7 +78,7 @@ summary.article-stub.arts .article-title:before {
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
-  margin-top: -1px;
+  margin-bottom: 10px;
 }
 li.philosophy_category:before {
   content: "+";
@@ -101,7 +101,7 @@ summary.article-stub.philosophy .article-title:before {
   content: "";
   display: block;
   float: left;
-  background: url('/images/philosophy.svg');
+  background: url('/images/philosophy-color.svg');
   background-size: 50px 50px;
   color: #b36ba6;
   text-shadow: 0px 0px 1px #555;
@@ -110,7 +110,7 @@ summary.article-stub.philosophy .article-title:before {
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
-  margin-top: -1px;
+  margin-bottom: 10px;
 }
 li.politics_category:before {
   content: "=";
@@ -133,7 +133,7 @@ summary.article-stub.politics .article-title:before {
   content: "";
   display: block;
   float: left;
-  background: url('/images/politics.svg');
+  background: url('/images/politics-color.svg');
   background-size: 50px 50px;
   color: #24db52;
   text-shadow: 0px 0px 1px #555;
@@ -142,7 +142,7 @@ summary.article-stub.politics .article-title:before {
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
-  margin-top: -1px;
+  margin-bottom: 10px;
 }
 li.projects_category:before {
   content: ":";
@@ -165,7 +165,7 @@ summary.article-stub.projects .article-title:before {
   content: "";
   display: block;
   float: left;
-  background: url('/images/projects.svg');
+  background: url('/images/projects-color.svg');
   background-size: 50px 50px;
   color: #f8f825;
   text-shadow: 0px 0px 1px #555;
@@ -174,7 +174,7 @@ summary.article-stub.projects .article-title:before {
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
-  margin-top: -1px;
+  margin-bottom: 10px;
 }
 @media print {
   #navigation {
@@ -247,8 +247,8 @@ header .title {
   color: black;
   display: inline-block;
   font-family: Helvetica, sans-serif;
-  font-size: 90px;
   font-weight: bold;
+  font-size: 90px;
   letter-spacing: -3.5px;
   line-height: 1.2;
   left: 5%;
@@ -299,11 +299,6 @@ summary.article-stub p {
 summary.article-stub .info {
   display: block;
   opacity: 0.7;
-}
-summary.article-stub svg {
-  display: block;
-  float: left;
-  fill: #ff0000;
 }
 summary.article-stub .article-author {
   position: absolute;
@@ -407,6 +402,7 @@ nav #navigation_hotzone {
   width: 260px;
 }
 nav #navigation_hotzone:hover li {
+  color: #aaa;
   margin-left: 1.9rem;
 }
 nav ul {
@@ -419,7 +415,7 @@ nav a {
   display: inline-block;
   margin-top: 10px;
 }
-nav li {
+nav #navigation_hotzone li {
   color: transparent;
   font-size: 2rem;
   margin: 0;
@@ -429,15 +425,15 @@ nav li {
   opacity: 0.4;
   display: inline-block;
 }
-nav li:hover {
+nav #navigation_hotzone li:hover {
   color: black;
   opacity: 1;
   transition: margin 0.1s;
 }
-nav li:first-child {
+nav #navigation_hotzone li:first-child {
   padding-top: 0px;
 }
-nav li:before {
+nav #navigation_hotzone li:before {
   font-family: monospace;
   margin-right: 5px;
   padding: 1px 5px;

@@ -20,7 +20,7 @@ summary.article-stub.science .article-title:before {
   content: "";
   display: block;
   float: left;
-  background: url('/images/science.svg');
+  background: url('/images/science-color.svg');
   background-size: 50px 50px;
   color: #d24532;
   text-shadow: 0px 0px 1px #555;
@@ -29,7 +29,6 @@ summary.article-stub.science .article-title:before {
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
-  margin-top: -1px;
   margin-bottom: 10px;
 }
 li.arts_category:before {
@@ -53,7 +52,7 @@ summary.article-stub.arts .article-title:before {
   content: "";
   display: block;
   float: left;
-  background: url('/images/arts.svg');
+  background: url('/images/arts-color.svg');
   background-size: 50px 50px;
   color: #003a47;
   text-shadow: 0px 0px 1px #555;
@@ -62,7 +61,6 @@ summary.article-stub.arts .article-title:before {
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
-  margin-top: -1px;
   margin-bottom: 10px;
 }
 li.philosophy_category:before {
@@ -95,7 +93,6 @@ summary.article-stub.philosophy .article-title:before {
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
-  margin-top: -1px;
   margin-bottom: 10px;
 }
 li.politics_category:before {
@@ -119,7 +116,7 @@ summary.article-stub.politics .article-title:before {
   content: "";
   display: block;
   float: left;
-  background: url('/images/politics.svg');
+  background: url('/images/politics-color.svg');
   background-size: 50px 50px;
   color: #24db52;
   text-shadow: 0px 0px 1px #555;
@@ -128,7 +125,6 @@ summary.article-stub.politics .article-title:before {
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
-  margin-top: -1px;
   margin-bottom: 10px;
 }
 li.projects_category:before {
@@ -152,7 +148,7 @@ summary.article-stub.projects .article-title:before {
   content: "";
   display: block;
   float: left;
-  background: url('/images/projects.svg');
+  background: url('/images/projects-color.svg');
   background-size: 50px 50px;
   color: #f8f825;
   text-shadow: 0px 0px 1px #555;
@@ -161,6 +157,5 @@ summary.article-stub.projects .article-title:before {
   text-align: center;
   margin-right: 27px;
   margin-left: -20px;
-  margin-top: -1px;
   margin-bottom: 10px;
 }
